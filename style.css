@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+  }
+  header {
+    background-color: #111827;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+  header h1 {
+    font-size: 2rem;
+    color: #38bdf8;
+  }
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #f8fafc;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #38bdf8;
+  }
+  
+  .welcome {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1e293b;
+  }
+  .welcome h2 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    animation: fadeIn 2s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .flex-machine {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+.profile-img {
+    position: relative; 
+    z-index: 2; 
+  }
+
+  .competence{
+    text-align: center;
+  }
+  
+  .profile-img img {
+    width: 500px; /* Largeur de l'image (ajuster à votre convenance) */
+    height: 400px; /* Hauteur de l'image (ajuster à votre convenance) */
+    object-fit: cover; /* L'image garde son ratio et couvre la zone sans déformer */
+    border-radius: 10px; /* Bordure arrondie autour de l'image */
+    border: 4px solid #38bdf8; /* Bordure colorée autour de l'image */
+  }
+  .ccc{
+    text-align: center;
+  }
+
+  hr{
+    color: #38bdf8;
+  }
+  
+  
+  .typing-box {
+    display: flex;
+    align-items: center;
+  }
+  .typing {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .typing span {
+    font-size: 5rem;
+  }
+  .highlight {
+    color: #38bdf8;
+  }
+  #typed-word {
+    font-size: 4rem;
+  }
+  .cursor {
+    display: inline-block;
+    color: #38bdf8;
+    animation: blink 0.8s infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .bio-skills {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .bio {
+    flex: 1;
+    margin-top: 20px;
+    min-width: 280px;
+  }
+  .bio h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  .bio p {
+    font-size: 1.1rem;
+  }
+  .skills {
+    flex: 1;
+    min-width: 280px;
+  }
+  .skill {
+    margin-bottom: 10px;
+  }
+  .skill span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .bar {
+    background-color: #334155;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .progress {
+    height: 20px;
+    width: 0%;
+    background-color: #38bdf8;
+    transition: width 2s ease-out;
+  }
+  
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .socials a {
+    font-size: 2.5rem;
+    color: #f8fafc;
+    padding: 15px;
+    border-radius: 50%;
+    animation: rainbow 4s infinite;
+    transition: transform 0.3s;
+  }
+  .socials a:hover {
+    transform: scale(1.2);
+  }
+  @keyframes rainbow {
+    0% { box-shadow: 0 0 15px #f43f5e; }
+    25% { box-shadow: 0 0 15px #facc15; }
+    50% { box-shadow: 0 0 15px #4ade80; }
+    75% { box-shadow: 0 0 15px #38bdf8; }
+    100% { box-shadow: 0 0 15px #a78bfa; }
+  }
+  
+  footer {
+    background-color: #1e293b;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 50px;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @media (max-width: 768px) {
+    .flex-machine {
+      flex-direction: column;
+      text-align: center;
+    }
+    .bio-skills {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .bio {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .typing {
+      font-size: 2.5rem;
+    }
+    .typing span {
+      font-size: 3rem;
+    }
+  }
+  /* Ensure all elements are responsive */
+  html {
+    font-size: 100%; /* Base font size for scaling */
+  }
+
+  body {
+    line-height: 1.6;
+  }
+
+  /* Images and videos should scale properly */
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Responsive typography */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+
+  /* Flexbox adjustments for smaller screens */
+  @media (max-width: 1024px) {
+    .flex-machine {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .bio-skills {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  /* Adjust padding and font sizes for smaller screens */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 10px;
+      font-size: 0.9rem;
+    }
+    .section {
+      padding: 40px 10px;
+    }
+    .welcome h2 {
+      font-size: 2rem;
+    }
+    .bio h2 {
+      font-size: 1.5rem;
+    }
+    .bio p {
+      font-size: 1rem;
+    }
+    .skills {
+      text-align: center;
+    }
+  }
+
+  /* Further adjustments for very small screens */
+  @media (max-width: 480px) {
+    .typing {
+      font-size: 2rem;
+    }
+    .typing span {
+      font-size: 2.5rem;
+    }
+    .socials a {
+      font-size: 2rem;
+      padding: 10px;
+    }
+    footer {
+      font-size: 0.8rem;
+    }
+  }

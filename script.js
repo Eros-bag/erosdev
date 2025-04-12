@@ -1,0 +1,37 @@
+// Machine à écrire
+const typedWord = document.getElementById("typed-word");
+const words = ["Développeur", "Programmeur", "Designer"];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  const currentWord = words[wordIndex];
+  if (!isDeleting) {
+    typedWord.textContent = currentWord.substring(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === currentWord.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1000);
+      return;
+    }
+  } else {
+    typedWord.textContent = currentWord.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+    }
+  }
+  setTimeout(typeEffect, isDeleting ? 60 : 100);
+}
+typeEffect();
+
+// Animation des barres de compétences
+const skillBars = document.querySelectorAll('.progress');
+window.addEventListener('load', () => {
+  skillBars.forEach(bar => {
+    const percent = bar.getAttribute('data-percent');
+    bar.style.width = percent + '%';
+  });
+});
