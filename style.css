@@ -60,12 +60,16 @@
   }
   .flex-machine {
     display: flex;
-    flex-direction: row; /* sur grands écrans : ligne */
+    gap: 40px;
     align-items: center;
     justify-content: center;
-    gap: 40px;
     position: relative;
-}
+  }
+  
+.profile-img {
+    position: relative; 
+    z-index: 2; 
+  }
 
 /* Sur petits écrans */
 @media (max-width: 1023px) {
@@ -513,6 +517,7 @@
     transform: scale(1);
   }
 }
+
 
 
 
