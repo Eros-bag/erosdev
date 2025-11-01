@@ -470,7 +470,7 @@
   }
 
   .typing {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   #typed-word {
@@ -496,5 +496,6 @@
     font-size: 0.9rem;
   }
 }
+
 
 
