@@ -121,7 +121,6 @@
     25%, 75% { opacity: 0; }
 }
 
-
 .profile-img {
     position: relative; 
     z-index: 2; 
@@ -514,6 +513,7 @@
     transform: scale(1);
   }
 }
+
 
 
 
