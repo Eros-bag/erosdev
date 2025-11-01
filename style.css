@@ -209,6 +209,29 @@
   .socials a:hover {
     transform: scale(1.2);
   }
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --highlight-color: #38bdf8;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --highlight-color: #38bdf8;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.highlight {
+  color: var(--highlight-color);
+}
+
   @keyframes rainbow {
     0% { box-shadow: 0 0 15px #f43f5e; }
     25% { box-shadow: 0 0 15px #facc15; }
@@ -383,6 +406,7 @@
     }
 
   }
+
 
 
 
