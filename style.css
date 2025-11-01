@@ -96,7 +96,7 @@
 
 .typing-box {
     position: relative;
-    width: 300px; /* largeur fixe pour que le texte ne pousse pas l'image */
+    
     text-align: left;
 }
 
@@ -517,6 +517,7 @@
     transform: scale(1);
   }
 }
+
 
 
 
