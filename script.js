@@ -1,6 +1,6 @@
 // Machine à écrire
 const typedWord = document.getElementById("typed-word");
-const words = ["Développeur", "Programmeur", "Designer"];
+const words = ["Web Developer", "Programmer", "Translator"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -35,3 +35,4 @@ window.addEventListener('load', () => {
     bar.style.width = percent + '%';
   });
 });
+
