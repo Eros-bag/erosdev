@@ -415,3 +415,86 @@
     }
 
   }
+
+/* Général pour mobile très petit écran */
+@media screen and (max-width: 480px) {
+
+  body {
+    font-size: 14px; /* texte plus petit */
+  }
+
+  /* Header et menu */
+  header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    width: 80%;
+    gap: 40px;
+  }
+
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
+
+  .burger div {
+    width: 20px;
+    height: 2px;
+  }
+
+  /* Flex-machine */
+  .flex-machine {
+    flex-direction: column; /* image au-dessus, texte en dessous */
+    gap: 15px;
+  }
+
+  .profile-img {
+    width: 90%; /* réduire largeur de l'image */
+    height: auto; /* conserver ratio */
+  }
+
+  .profile-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Typing box */
+  .typing-box {
+    width: 90%; /* conteneur fixe pour ne pas bouger l'image */
+    min-width: unset;
+    font-size: 1.5rem; /* réduire texte */
+  }
+
+  .typing {
+    font-size: 2rem;
+  }
+
+  #typed-word {
+    font-size: 2rem;
+  }
+
+  .typing span {
+    font-size: 2rem;
+  }
+
+  /* Sections */
+  .bio-skills, .projects, .contact {
+    padding: 20px 10px;
+  }
+
+  hr {
+    margin: 20px 0;
+  }
+
+  /* Boutons et liens */
+  button, .btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+
