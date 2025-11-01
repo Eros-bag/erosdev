@@ -35,3 +35,13 @@ window.addEventListener('load', () => {
     bar.style.width = percent + '%';
   });
 });
+
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav-links");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  // Animation des lignes
+  burger.classList.toggle("toggle");
+});
+
