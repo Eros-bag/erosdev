@@ -35,18 +35,3 @@ window.addEventListener('load', () => {
     bar.style.width = percent + '%';
   });
 });
-
-const toggleButton = document.getElementById("theme-toggle");
-toggleButton.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-
-  // Change l'icône selon le mode
-  if (document.body.classList.contains("dark-mode")) {
-    toggleButton.textContent = "☀️"; // Soleil pour revenir au light mode
-  } else {
-    toggleButton.textContent = "🌙"; // Lune pour passer au dark mode
-  }
-});
-
-
-
