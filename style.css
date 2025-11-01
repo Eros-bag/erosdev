@@ -60,11 +60,73 @@
   }
   .flex-machine {
     display: flex;
-    flex-direction: column; /* passe en colonne pour mettre le texte sous l'image */
-    align-items: center;    /* centre horizontalement */
-    gap: 20px;              /* espace entre image et texte */
+    flex-direction: column; /* par défaut pour mobile */
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
     position: relative;
 }
+
+/* Sur grands écrans, mettre en ligne */
+@media (min-width: 1024px) {
+    .flex-machine {
+        flex-direction: row; /* image et typing sur la même ligne */
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.profile-img {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-img img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid #38bdf8;
+}
+
+.typing-box {
+    text-align: center;
+    /* largeur fixe pour ne pas pousser l'image */
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.typing {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.typing span {
+    font-size: 5rem;
+}
+
+.highlight {
+    color: #38bdf8;
+}
+
+#typed-word {
+    font-size: 4rem;
+}
+
+.cursor {
+    display: inline-block;
+    color: #38bdf8;
+    animation: blink 0.8s infinite;
+}
+
+/* Curseur */
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
 
 .profile-img {
     position: relative; 
@@ -359,6 +421,7 @@
     }
 
   }
+
 
 
 
