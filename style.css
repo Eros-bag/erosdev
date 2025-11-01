@@ -159,6 +159,44 @@
     background-color: #38bdf8;
     transition: width 2s ease-out;
   }
+
+.hire-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.hire-btn .btn-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.fiverr-btn {
+    background-color: #1DBF73; /* vert Fiverr */
+}
+
+.fiverr-btn:hover {
+    background-color: #17a567;
+    transform: translateY(-3px);
+}
+
+.comeup-btn {
+    background-color: #FF6600; /* orange ComeUp */
+}
+
+.comeup-btn:hover {
+    background-color: #e65c00;
+    transform: translateY(-3px);
+}
+
   
   .socials {
     display: flex;
@@ -351,3 +389,4 @@
     }
 
   }
+
