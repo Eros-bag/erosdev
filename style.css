@@ -499,7 +499,7 @@
       .socials {
     display: flex;
     justify-content: center;
-    gap: 7px;
+    gap: 6px;
     margin-top: 15px;
   }
   .socials a {
@@ -514,6 +514,7 @@
     transform: scale(1);
   }
 }
+
 
 
 
